@@ -852,4 +852,7 @@ footer .map iframe {
         .little-aboutUs {
             height: 1000px;
         }
+        .copyright{
+            font-size: 14px;
+        }
     }

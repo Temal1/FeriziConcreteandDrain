@@ -851,3 +851,8 @@ footer .map iframe {
             left: 30px;
         }
     }
+    @media(max-width: 326px) {
+        .copyright{
+            font-size: 14px;
+        }
+    }
