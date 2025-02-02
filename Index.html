@@ -25,9 +25,7 @@
                         <div class="open-nav-menu">
                             <span></span>
                         </div>
-                    <div class="menu-overlay">
-                    </div>
-                    <!-- navigation menu start -->
+                        <div class="menu-overlay"></div>
                     <nav class="nav-menu">
                         <div class="close-nav-menu">
                             <img src="assets/images/Close.png" alt="close">
@@ -53,8 +51,7 @@
                                 </ul>
                             </li>
                         </ul>
-                        </nav>
-                        <!-- navigation menu end -->
+                    </nav>
                     </div>
                 </div>
             </header>
@@ -63,17 +60,40 @@
             <!-- HTML SLIDER -->
             <div class="slider">
                 <div class="slides">
-                    <div class="slide"><img src="assets/images/bg-1.jpg" alt=""></div>
-                    <div class="slide"><img src="assets/images/bg-2.jpg" alt=""></div>
-                    <div class="slide"><img src="assets/images/bg-3.jpg" alt=""></div>
+                    <div class="slide">
+                        <img src="assets/images/back-1.jpg" alt="">
+                        <div class="slide-content">
+                            <h1>Professional Concrete Solutions</h1>
+                            <p>Expert craftsmanship for all your concrete needs</p>
+                            <a href="pages/projects.html" class="slide-btn">View Projects</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/back-2.jpg" alt="">
+                        <div class="slide-content">
+                            <h1>Quality Drainage Systems</h1>
+                            <p>Protecting your property with proper water management</p>
+                            <a href="pages/projects.html" class="slide-btn">Our Services</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/back-3.jpg" alt="">
+                        <div class="slide-content">
+                            <h1>15+ Years of Excellence</h1>
+                            <p>Serving Kitchener-Waterloo with dedication</p>
+                            <a href="pages/AboutUs.html" class="slide-btn">About Us</a>
+                        </div>
+                    </div>
                 </div>
         
-                <button class="arrows prev" onclick="plusslide(-1)">
-                    <span><i class="fas fa-angle-left"></i></span>
-                </button>
-                <button class="arrows next" onclick="plusslide(1)">
-                    <span><i class="fas fa-angle-right"></i></span>
-                </button>
+                <div class="arrow-controls">
+                    <button class="arrows prev" onclick="plusslide(-1)">
+                        <span><i class="fas fa-angle-left"></i></span>
+                    </button>
+                    <button class="arrows next" onclick="plusslide(1)">
+                        <span><i class="fas fa-angle-right"></i></span>
+                    </button>
+                </div>
         
                 <div class="dots">
                     <span onclick="currentslide(1)"></span>
@@ -84,76 +104,106 @@
             <!-- HTML SLIDER -->
 
             <!-- RECENT PROJECT DIV -->
-            <div class="mainDiv-recent-project">
+        <div class="mainDiv-recent-project">
+            <div class="recent-projects-div">
                 <div class="mainDiv-recent-projectH1">
-                <h1>OUR RECENT PROJECT</h1>
+                    <h1>Our recent projects</h1>
+                    <p class="cards-hover-hint desktop">↓ Hover over cards to see details! ↓</p>
+                    <p class="cards-hover-hint mobile">↓ Tap cards to see details! ↓</p>
                 </div>
                 <div class="recentProject-content">
                     <!-- FIRST CARD DIV -->
-                    <div class="card"><img src="assets/images/bg-1.jpg"/>
+                    <div class="card"><img src="/assets/images/parging.jpg"/>
                         <div class="info">
                             <h1>Parging</h1>
-                            <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
-                            <form action="pages/projects.html#card7">
-                                <button type="submit">Read More</button>
+                            <p>Expert foundation coating that protects and waterproofs your basement walls while providing a smooth, attractive finish that enhances curb appeal.</p>
+                            <form action="/pages/projects.html#card7">
+                                <button type="submit">Learn More</button>
                             </form>
                         </div>
                     </div>
                     <!-- FIRST CARD DIV -->
-
+                
                     <!-- SECOND CARD DIV -->
-                    <div class="card"><img src="assets/images/bg-2.jpg"/>
+                    <div class="card"><img src="/assets/images/resurfacing.jpg"/>
                         <div class="info">
                             <h1>Resurfacing</h1>
-                            <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
-                            <form action="pages/projects.html#card2">
-                                <button type="submit">Read More</button>
+                            <p>Transform your old concrete with our professional resurfacing service. We repair cracks, level surfaces, and add custom finishes for a brand new look.</p>
+                            <form action="/pages/projects.html#card2">
+                                <button type="submit">Learn More</button>
                             </form>
-                        </div>
+                       </div>
                     </div>
                     <!-- SECOND CARD DIV -->
-
+                
                     <!-- THIRD CARD DIV -->
-                    <div class="card"><img src="assets/images/bg-3.jpg"/>
+                    <div class="card"><img src="/assets/images/epoxy.jpg"/>
                         <div class="info">
                             <h1>Epoxy</h1>
-                            <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
-                            <form action="pages/projects.html#card5">
-                                <button type="submit">Read More</button>
+                            <p>Superior floor coating solution that creates a durable, chemical-resistant, and showroom-quality finish perfect for garages and commercial spaces.</p>
+                            <form action="/pages/projects.html#card5">
+                                <button type="submit">Learn More</button>
                             </form>
                         </div>
                     </div>
                     <!-- THIRD CARD DIV -->
                 </div>
             </div>
-            <!-- RECENT PROJECT DIV -->
+        </div>
+        <!-- RECENT PROJECT DIV -->
 
             <!-- LITTLE ABOUT US DIV -->
             <div class="little-aboutUs">
                 <div class="div-span">
-                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem alias 
-                        reiciendis quae aspernatur cupiditate error, ex, ut laboriosam magni ea obcaecati aut porro! Iure quia,
-                        sint omnis fugit et provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fugit
-                        quaerat quisquam voluptatibus ipsum molestias facere maxime! Ad molestiae optio dolorum odio perferendis, 
-                        voluptatum dolore quasi numquam voluptates rerum veniam?Lorem ipsum dolor sit amet consectetur adipisicing 
-                        elit. Unde, sequi explicabo dolor odio error et quis architecto, ducimus voluptates, ullam dolores ut beatae 
-                        expedita! Nam obcaecati impedit ipsa neque quas Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid 
-                        ad deleniti minus facere temporibus voluptate recusandae nesciunt minima cumque, hic id quaerat officiis fugiat 
-                        sed vel in iure at fuga?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, aut similique nihil saepe, 
-                        pariatur officia ex possimus beatae dignissimos iusto sequi temporibus mollitia dolore soluta nesciunt, minima ab minus 
-                        recusandae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt officia, fugiat asperiores, consequatur 
-                        quis non nulla consequuntur maxime vel odio corporis quas error? Corrupti, ipsa veniam. Vel magnam architecto minima.
+                    <h2 style="color: #0f4c5c; margin-bottom: 30px; font-size: 2.5em;">Who We Are</h2>
+                    <span>
+                        With over 15 years of experience in the concrete industry, Ferizi Concrete and Drain 
+                        has established itself as a leading provider of professional concrete services in the 
+                        Kitchener-Waterloo region. Our commitment to quality workmanship and customer satisfaction 
+                        has earned us a reputation for excellence in:
                     </span>
+                    <div class="card-whoweare" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+                        <div style="background: #f8f9fa; padding: 20px; border-radius: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                            <h3 style="color: #0f4c5c; margin-bottom: 15px;">Our Expertise</h3>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                    <ion-icon name="checkmark-circle-outline" style="color: #0f4c5c; margin-right: 10px; font-size: 20px;"></ion-icon>
+                                    Professional Concrete Services
+                                </li>
+                                <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                    <ion-icon name="checkmark-circle-outline" style="color: #0f4c5c; margin-right: 10px; font-size: 20px;"></ion-icon>
+                                    Foundation Repairs & Waterproofing
+                                </li>
+                                <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                    <ion-icon name="checkmark-circle-outline" style="color: #0f4c5c; margin-right: 10px; font-size: 20px;"></ion-icon>
+                                    Decorative Concrete Solutions
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 20px; border-radius: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                            <h3 style="color: #0f4c5c; margin-bottom: 15px;">Why Choose Us</h3>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                    <ion-icon name="star-outline" style="color: #0f4c5c; margin-right: 10px; font-size: 20px;"></ion-icon>
+                                    15+ Years Experience
+                                </li>
+                                <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                    <ion-icon name="shield-checkmark-outline" style="color: #0f4c5c; margin-right: 10px; font-size: 20px;"></ion-icon>
+                                    Fully Licensed & Insured
+                                </li>
+                                <li style="margin-bottom: 10px; display: flex; align-items: center;">
+                                    <ion-icon name="people-outline" style="color: #0f4c5c; margin-right: 10px; font-size: 20px;"></ion-icon>
+                                    Customer Satisfaction Focus
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="link-aboutUS">
-                    <a href="pages/AboutUs.html">About Us</a>
+                    <a href="pages/AboutUs.html">Learn More</a>
                 </div>
             </div>
             <!-- LITTLE ABOUT US DIV -->
-
-            <!-- LINE HTML -->
-            <hr id="hr-line" style="width: 100%; height: 3px; color: black;">
-            <!-- LINE HTML -->
 
             <!-- FOOTER HTML -->
             <footer>
@@ -179,8 +229,7 @@
                 </div>
                 
                     <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184551.80858400642!2d-79.51814071709617!3d43.71840381079431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2s!4v1656173210627!5m2!1sen!2s"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2898.6652219337925!2d-80.51744452401158!3d43.40492627111496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf58e70a9d12f%3A0x37345e8fed54761e!2s117%20Mountain%20Laurel%20Crescent%20%23169%2C%20Kitchener%2C%20ON%20N2E%203T9%2C%20Canada!5e0!3m2!1sen!2s!4v1738362266419!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 
             </footer>
@@ -196,14 +245,14 @@
 
         <!-- COPYRIGHT HMTL -->
         <div class="copyright">
-            <p>
+            <span>
                 &copy; 2024 TeBo. All Rights Reserved | Krijuar nga Ferizi Dev
-            </p>
+            </span>
         </div>
         <!-- COPYRIGHT HTML -->
         
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

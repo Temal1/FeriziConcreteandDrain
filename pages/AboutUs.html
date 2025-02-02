@@ -19,21 +19,19 @@
                 <div class="container">
                     <div class="header-main">
                         <div class="logo">
-                            <a href="/Index.html"><img src="/assets/images/logo-2.0.png" alt=""></a>
+                            <a href="#"><img src="/assets/images/logo-2.0.png" alt=""></a>
                         </div>
                         <div class="open-nav-menu">
                             <span></span>
                         </div>
-                    <div class="menu-overlay">
-                    </div>
-                    <!-- navigation menu start -->
+                        <div class="menu-overlay"></div>
                     <nav class="nav-menu">
                         <div class="close-nav-menu">
                             <img src="/assets/images/Close.png" alt="close">
                         </div>
                         <ul class="menu">
                             <li class="menu-item line-item">
-                                <a active id="fonti" href="/Index.html">Home</a>
+                                <a id="fonti" href="/index.html">Home</a>
                             </li>
                             <li class="menu-item line-item">
                                 <a class="active" id="fonti" href="#">About Us</a>
@@ -52,37 +50,102 @@
                                 </ul>
                             </li>
                         </ul>
-                        </nav>
-                        <!-- navigation menu end -->
+                    </nav>
                     </div>
                 </div>
             </header>
-            <!-- HTML NAV -->
+
+            <!-- Add this new section after header and before aboutus div -->
+            <div class="hero-section">
+                <div class="overlay"></div>
+                <div class="hero-content">
+                    <h1 class="typing-text">ABOUT US</h1>
+                </div>
+            </div>
 
             <!-- HTML ABOUTUS  -->
             <div class="aboutus">
-                <div class="AboutUs-H1"><h1>About Us</h1></div>
-                <div class="AboutUs-P">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum obcaecati debitis deleniti quae tenetur 
-                        voluptatum amet esse cum sequi dolores, voluptatem magni tempore totam! Sunt dolore architecto id necessitatibus magnam.
-                    </p>
+                <div class="AboutUs-H1">
+                    <h1>About Us</h1>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="company-intro">
+                    <div class="intro-text">
+                        <h2>Your Trusted Concrete & Drainage Solutions</h2>
+                        <p>With over 15 years of experience, Ferizi Concrete and Drain specializes in delivering superior concrete solutions 
+                        and expert drainage services across Ontario. Our commitment to quality and customer satisfaction has made us a leader 
+                        in residential and commercial construction projects.</p>
+                    </div>
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="services-overview">
+                    <h2 style="color: #0f4c5c;">Our Services</h2>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <ion-icon name="construct-outline"></ion-icon>
+                            <h3>Concrete Installation</h3>
+                            <p>Professional concrete pouring and finishing for driveways, patios, and foundations.</p>
+                        </div>
+                        <div class="service-card">
+                            <ion-icon name="water-outline"></ion-icon>
+                            <h3>Drainage Solutions</h3>
+                            <p>Expert drainage system installation and repair to protect your property.</p>
+                        </div>
+                        <div class="service-card">
+                            <ion-icon name="home-outline"></ion-icon>
+                            <h3>Residential Services</h3>
+                            <p>Complete concrete and drainage solutions for homeowners.</p>
+                        </div>
+                        <div class="service-card">
+                            <ion-icon name="business-outline"></ion-icon>
+                            <h3>Commercial Projects</h3>
+                            <p>Large-scale concrete work and drainage systems for businesses.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="why-choose-us">
+                    <h2 style="color: #0f4c5c;">Why Choose Us?</h2>
+                    <div class="reasons-grid">
+                        <div class="reason-item">
+                            <ion-icon name="shield-checkmark-outline"></ion-icon>
+                            <h3>Quality Guaranteed</h3>
+                            <p>We stand behind our work with comprehensive warranties.</p>
+                        </div>
+                        <div class="reason-item">
+                            <ion-icon name="time-outline"></ion-icon>
+                            <h3>Timely Completion</h3>
+                            <p>Projects delivered on schedule and within budget.</p>
+                        </div>
+                        <div class="reason-item">
+                            <ion-icon name="people-outline"></ion-icon>
+                            <h3>Expert Team</h3>
+                            <p>Skilled professionals with years of experience.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- HTML ABOUTUS -->
 
 
-            <!-- LINE HTML -->
-            <!-- <hr id="hr-line" style="width: 100%; height: 3px; color: black;"> -->
-            <!-- LINE HTML -->
-
             <!--COMMENT SECTION-->
             
             <!--COMMENT SECTION-->
-
-            <!-- LINE HTML -->
-            <hr id="hr-line" style="width: 100%; height: 3px; color: black;">
-            <!-- LINE HTML -->
 
 
             <!-- FOOTER HTML -->
@@ -126,109 +189,15 @@
 
         <!-- COPYRIGHT HTML -->
         <div class="copyright">
-            <p>
+            <span>
                 &copy; 2024 TeBo. All Rights Reserved | Krijuar nga Ferizi Dev
-            </p>
+            </span>
         </div>
         <!-- COPYRIGHT HTML -->
         
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script>
-    // SCROLL UP
-let calcScrollValue = () => {
-    let scrollProgress = document.getElementById("progress");
-    let progressValue = document.getElementById("progress-value");
-    let pos = document.documentElement.scrollTop;
-    let calcHeight =
-    document.documentElement.scrollHeight -
-    document.documentElement.clientHeight;
-    let scrollValue = Math.round((pos * 100) / calcHeight);
-    if (pos > 100) {
-    scrollProgress.style.display = "grid";
-    } else {
-    scrollProgress.style.display = "none";
-    }
-    scrollProgress.addEventListener("click", () => {
-    document.documentElement.scrollTop = 0;
-    });
-    scrollProgress.style.background = `conic-gradient(#0f4c5c ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
-};
-
-window.onscroll = calcScrollValue;
-window.onload = calcScrollValue;
-// SCROLL UP
-
-        //DROPDOWN MENU JS
-(() =>{
-    const openNavMenu = document.querySelector(".open-nav-menu"),
-    closeNavMenu = document.querySelector(".close-nav-menu"),
-    navMenu = document.querySelector(".nav-menu"),
-    menuOverlay = document.querySelector(".menu-overlay"),
-    mediaSize = 991;
-
-    openNavMenu.addEventListener("click", toggleNav);
-    closeNavMenu.addEventListener("click", toggleNav);
-    // close the navMenu by clicking outside
-    menuOverlay.addEventListener("click", toggleNav);
-
-    function toggleNav() {
-        navMenu.classList.toggle("open");
-        menuOverlay.classList.toggle("active");
-        document.body.classList.toggle("hidden-scrolling");
-    }
-
-    navMenu.addEventListener("click", (event) =>{
-        if(event.target.hasAttribute("data-toggle") && 
-            window.innerWidth <= mediaSize){
-            // prevent default anchor click behavior
-            event.preventDefault();
-            const menuItemHasChildren = event.target.parentElement;
-          // if menuItemHasChildren is already expanded, collapse it
-            if(menuItemHasChildren.classList.contains("active")){
-                collapseSubMenu();
-            }
-            else{
-            // collapse existing expanded menuItemHasChildren
-            if(navMenu.querySelector(".menu-item-has-children.active")){
-                collapseSubMenu();
-            }
-            // expand new menuItemHasChildren
-            menuItemHasChildren.classList.add("active");
-            const subMenu = menuItemHasChildren.querySelector(".sub-menu");
-            subMenu.style.maxHeight = subMenu.scrollHeight + "px";
-            }
-        }
-    });
-    function collapseSubMenu(){
-        navMenu.querySelector(".menu-item-has-children.active .sub-menu")
-        .removeAttribute("style");
-        navMenu.querySelector(".menu-item-has-children.active")
-        .classList.remove("active");
-    }
-    function resizeFix(){
-         // if navMenu is open ,close it
-            if(navMenu.classList.contains("open")){
-                toggleNav();
-            }
-         // if menuItemHasChildren is expanded , collapse it
-            if(navMenu.querySelector(".menu-item-has-children.active")){
-                collapseSubMenu();
-        }
-    }
-
-    window.addEventListener("resize", function(){
-        if(this.innerWidth > mediaSize){
-            resizeFix();
-        }
-    });
-})();
-//DROPDOWN MENU JS
-
-//COMMENT SECTION
-
-//COMMENT SECTION
-</script>
+    <script src="/assets/js/about.js"></script>
 </body>
 </html>
