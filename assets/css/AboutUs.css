@@ -107,21 +107,21 @@ a{
 	z-index: 9999; 
     max-width: 1500px;
     transition: transform 0.3s ease-in-out; 
-    top: 0; /* Add this line */
-    left: 50%; /* Add this line */
-    transform: translateX(-50%); /* Add this line */
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
 }
 
 .header.nav-up {
-    transform: translate(-50%, -100%); /* Updated to maintain horizontal centering */
+    transform: translate(-50%, -100%);
 }
 
 .header.nav-down {
-    transform: translateX(-50%); /* Keep centered */
+    transform: translateX(-50%); 
 }
 
 .header.nav-hidden {
-    transform: translate(-50%, -100%); /* Updated to maintain horizontal centering */
+    transform: translate(-50%, -100%); 
 }
 
 .header-main {
@@ -675,12 +675,6 @@ a{
 
 /* ABOUTUS CSS */
 
-
-/* COMMENT SECTION */
-
-/* COMMENT SECTION */
-
-
 /* FOOTER */
 footer {
     display: flex;
@@ -837,7 +831,7 @@ footer .map {
     
 
 
-    /* RESPONSIVE WITH MAX-WIDTH 991PX */
+    /* RESPONSIVE 991PX */
     @media(max-width: 991px){
         .container{
             height: 120px;
@@ -854,7 +848,7 @@ footer .map {
             right: -280px;
             top: 0;
             width: 280px;
-            height: 70vh !important; /* 50% of viewport height */
+            height: 70vh !important; 
             background-color: #222222;
             z-index: 9999 !important;
             padding: 15px 0;
@@ -920,7 +914,7 @@ footer .map {
             display: flex;
         }
     }
-    /* RESPONSIVE WITH MAX-WIDTH 991PX */
+    /* RESPONSIVE 991PX */
 
 
 

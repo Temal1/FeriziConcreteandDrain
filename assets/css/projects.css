@@ -283,19 +283,17 @@ a{
 }
 /* NAVI CSS */
 
-/* Add this after your header CSS and before the recent projects section */
 .hero-section {
     position: relative;
     height: 60vh;
     width: 100%;
-    background-image: url('/assets/images/back-2.jpg'); /* Update with your image path */
+    background-image: url('/assets/images/back-2.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-top: 150px; */
 }
 
 .hero-section .overlay {
@@ -1178,7 +1176,7 @@ footer .map {
     
 
 
-    /* RESPONSIVE WITH MAX-WIDTH 991PX */
+    /* RESPONSIVE 991PX */
     @media(max-width: 991px){
         .container{
             height: 120px;
@@ -1261,7 +1259,7 @@ footer .map {
             display: flex;
         }
     }
-    /* RESPONSIVE WITH MAX-WIDTH 991PX */
+    /* RESPONSIVE 991PX */
 
 
 

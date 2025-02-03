@@ -120,17 +120,14 @@ window.addEventListener('scroll', () => {
 //DROPDOWN MENU JS
 
 
-/* filepath: /d:/AIROPLANI ME DY DRITA/Projekte/FeriziConcreteandDrain/assets/js/project.js */
-/* ...existing code... */
 
-// Simple Modal System
+//MODAL JS
 document.addEventListener('DOMContentLoaded', function() {
     const modalButtons = document.querySelectorAll('[data-modal-target]');
     const modalCloses = document.querySelectorAll('.modal-close');
     const modals = document.querySelectorAll('.modal');
     let activeModal = null;
 
-    // Open modal
     modalButtons.forEach(button => {
         button.addEventListener('click', () => {
             const modal = document.querySelector(button.dataset.modalTarget);
@@ -140,7 +137,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Close modal
     modalCloses.forEach(button => {
         button.addEventListener('click', () => {
             const modal = button.closest('.modal');
@@ -148,14 +144,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Close on overlay click
     modals.forEach(modal => {
         modal.querySelector('.modal-overlay').addEventListener('click', () => {
             closeModal(modal);
         });
     });
 
-    // Close on escape key
     document.addEventListener('keydown', e => {
         if (e.key === 'Escape' && activeModal) {
             closeModal(activeModal);
@@ -166,15 +160,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!modal || activeModal) return;
         activeModal = modal;
         
-        // Show modal
         modal.style.display = 'flex';
         document.body.classList.add('modal-open');
         
-        // Force reflow then add show class
         void modal.offsetWidth;
         modal.classList.add('show');
         
-        // Focus first focusable element
         const focusable = modal.querySelector('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
         if (focusable) focusable.focus();
     }
@@ -185,12 +176,10 @@ document.addEventListener('DOMContentLoaded', function() {
         modal.classList.remove('show');
         document.body.classList.remove('modal-open');
         
-        // Hide modal after animation
         setTimeout(() => {
             modal.style.display = 'none';
             activeModal = null;
         }, 300);
     }
 });
-
-/* ...rest of existing code... */
+//MODAL JS
