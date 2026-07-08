@@ -1,10 +1,3 @@
-/* ==========================================================================
-   PREMIUM ENHANCEMENTS (progressive)
-   - Scroll-reveal animations via IntersectionObserver
-   - Native lazy-loading + async decoding for images
-   Purely additive: if this script fails, the site stays fully usable.
-   Does not touch the custom navigation.
-   ========================================================================== */
 (function () {
     "use strict";
 
@@ -14,13 +7,12 @@
 
     var pageStart = Date.now();
 
-    /* ---- Premium preloader: hide once the page has loaded ---- */
     function setupPreloader() {
         var pre = document.getElementById("sitePreloader");
         if (!pre) return;
 
         var hidden = false;
-        var MIN_VISIBLE = 500; // brief, intentional premium beat
+        var MIN_VISIBLE = 500;
 
         function hide() {
             if (hidden) return;
@@ -42,11 +34,9 @@
             window.addEventListener("load", done);
         }
 
-        /* Safety net: never trap the user behind the loader */
         setTimeout(hide, 6000);
     }
 
-    /* ---- Lazy-load images (skip logo / eager hero slides) ---- */
     function enhanceImages() {
         var imgs = document.querySelectorAll(
             ".all-content img, .modal img"
@@ -58,7 +48,6 @@
         });
     }
 
-    /* ---- Scroll reveal ---- */
     function setupReveal() {
         var singles = document.querySelectorAll(
             ".mainDiv-recent-projectH1," +
@@ -81,7 +70,7 @@
         );
 
         if (prefersReducedMotion || !("IntersectionObserver" in window)) {
-            return; // leave content in its natural, fully-visible state
+            return; 
         }
 
         singles.forEach(function (el) { el.classList.add("pre-reveal"); });

@@ -1,10 +1,3 @@
-/* ==========================================================================
-   PREMIUM ENHANCEMENT LAYER
-   Loaded AFTER each page's stylesheet. Refines typography, spacing, cards,
-   sections, footer, modals and buttons WITHOUT touching the custom navbar
-   and WITHOUT changing the original brand palette (#0f4c5c / #083944).
-   ========================================================================== */
-
 :root {
     --brand: #0f4c5c;
     --brand-dark: #083944;
@@ -24,7 +17,6 @@
     --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-/* ------------------------------------------------------------------ Base */
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -47,7 +39,6 @@ img {
     color: #fff;
 }
 
-/* Refined, on-brand scrollbar */
 html::-webkit-scrollbar {
     width: 11px;
 }
@@ -62,7 +53,7 @@ html::-webkit-scrollbar-thumb:hover {
     background-color: var(--brand-dark);
 }
 
-/* Accessible keyboard focus (skips the nav, which is intentionally untouched) */
+
 .all-content a:not(.header a):focus-visible,
 button:not(.header button):focus-visible,
 .slide-btn:focus-visible {
@@ -71,7 +62,7 @@ button:not(.header button):focus-visible,
     border-radius: 8px;
 }
 
-/* --------------------------------------------------- Section headings */
+
 .mainDiv-recent-projectH1 h1,
 .title-jobs-maindiv h1 {
     font-weight: 800;
@@ -98,7 +89,7 @@ button:not(.header button):focus-visible,
     color: var(--text-body);
 }
 
-/* --------------------------------------------------- Premium preloader */
+
 .site-preloader {
     position: fixed;
     inset: 0;
@@ -185,28 +176,20 @@ button:not(.header button):focus-visible,
     }
 }
 
-/* -------------------------------------------- Home: hero slider polish */
-/* Remove the on-load "typing swipe" overlay that flashed across the hero
-   title when joining the site (replaced by the premium preloader). */
 .slide-content h1::after {
     display: none !important;
 }
 
-/* The slider JS animates `left`, but the base CSS only transitioned
-   `transform`, so slides snapped instantly. Transition `left` for a smooth,
-   premium glide. */
 .slides {
     transition: left 0.85s cubic-bezier(0.7, 0, 0.2, 1) !important;
 }
 
-/* Images were stretched on desktop (object-fit only set on mobile). */
 .slide img {
     -o-object-fit: cover;
     object-fit: cover;
     object-position: center;
 }
 
-/* Richer, cinematic overlay for readable, premium text */
 .slide::before {
     background: linear-gradient(
         to bottom,
@@ -229,7 +212,6 @@ button:not(.header button):focus-visible,
     font-weight: 800;
     font-size: clamp(2.2rem, 6vw, 4rem);
     line-height: 1.08;
-    /* Bright, legible sheen that stays inside the brand palette */
     background: linear-gradient(120deg, #ffffff 0%, #e9ecef 55%, #ffffff 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -251,7 +233,6 @@ button:not(.header button):focus-visible,
     padding: 14px 34px;
 }
 
-/* Larger tap targets + smoother dot transitions */
 .dots {
     bottom: 22px;
 }
@@ -298,7 +279,6 @@ button:not(.header button):focus-visible,
     transform: scale(1.15);
 }
 
-/* -------------------------------------------- Recent projects section */
 .mainDiv-recent-project {
     background: linear-gradient(180deg, #ffffff 0%, var(--surface-alt) 100%);
     padding: 90px 0;
@@ -335,7 +315,6 @@ button:not(.header button):focus-visible,
     letter-spacing: 0.2px;
 }
 
-/* --------------------------------------- Home: "Who We Are" section */
 .little-aboutUs {
     padding: 90px 0;
 }
@@ -363,7 +342,6 @@ button:not(.header button):focus-visible,
     max-width: 900px;
 }
 
-/* Enhance the inline-styled feature cards without changing their colors */
 .card-whoweare > div {
     transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
     position: relative;
@@ -412,7 +390,6 @@ button:not(.header button):focus-visible,
     letter-spacing: 0.3px;
 }
 
-/* --------------------------------------------- Subpage hero sections */
 .hero-section .overlay {
     background: linear-gradient(
         135deg,
@@ -429,8 +406,6 @@ button:not(.header button):focus-visible,
     animation: heroContentIn 0.8s var(--ease) both;
 }
 
-/* Premium typewriter title: a chunky left-to-right reveal (no layout shift),
-   a sleek blinking caret once typed, then an underline that draws in. */
 .hero-section .typing-text {
     display: inline-block;
     position: relative;
@@ -512,7 +487,6 @@ button:not(.header button):focus-visible,
     }
 }
 
-/* --------------------------------------------------- About page cards */
 .AboutUs-H1 h1 {
     font-weight: 800;
     letter-spacing: -0.02em;
@@ -571,7 +545,6 @@ button:not(.header button):focus-visible,
     line-height: 1.65;
 }
 
-/* --------------------------------------------- Projects: job cards */
 .jobs-maindiv {
     padding: 90px 0;
 }
@@ -592,7 +565,6 @@ button:not(.header button):focus-visible,
     letter-spacing: -0.01em;
 }
 
-/* Keep anchored job cards clear of the fixed header when linked to */
 #card1, #card2, #card3, #card4,
 #card5, #card6, #card7, #card8 {
     scroll-margin-top: 130px;
@@ -614,7 +586,6 @@ button:not(.header button):focus-visible,
     transform: translateX(5px);
 }
 
-/* ---------------------------------------------------- Modal polish */
 .modal-box {
     border: 1px solid rgba(15, 76, 92, 0.08);
     box-shadow: var(--shadow-lg);
@@ -653,7 +624,6 @@ button:not(.header button):focus-visible,
     transform: scale(1.05);
 }
 
-/* -------------------------------------------------- Buttons (shared) */
 .slide-btn,
 .card .info button,
 .little-aboutUs .link-aboutUS a,
@@ -662,7 +632,6 @@ button:not(.header button):focus-visible,
     will-change: transform;
 }
 
-/* -------------------------------------------------------- Footer */
 footer {
     padding: 40px 0 !important;
     gap: 24px;
@@ -747,7 +716,6 @@ footer .map iframe {
     font-size: 0.95em;
 }
 
-/* Premium "Made by" credit line */
 .copyright-credit {
     display: inline-flex;
     align-items: center;
@@ -799,7 +767,6 @@ footer .map iframe {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
 }
 
-/* --------------------------------------------- Scroll-reveal (JS opt-in) */
 .pre-reveal {
     opacity: 0;
     transform: translateY(28px);
@@ -812,7 +779,6 @@ footer .map iframe {
     transform: none;
 }
 
-/* Stagger children within grids for a premium cascade */
 .reveal-stagger > * {
     opacity: 0;
     transform: translateY(28px);
@@ -833,7 +799,6 @@ footer .map iframe {
 .reveal-stagger.reveal-in > *:nth-child(7) { transition-delay: 0.47s; }
 .reveal-stagger.reveal-in > *:nth-child(8) { transition-delay: 0.54s; }
 
-/* Respect users who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
     .pre-reveal,
     .reveal-stagger > * {
@@ -843,7 +808,6 @@ footer .map iframe {
     }
 }
 
-/* ---------------------------------------------------- Responsive tweaks */
 @media (max-width: 991px) {
     .mainDiv-recent-project,
     .little-aboutUs,
