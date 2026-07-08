@@ -1349,7 +1349,6 @@ footer .map iframe {
     transition: transform 0.3s ease;
     display: inline-block;
 }
-
 .div-button .openBtn:hover::after {
     transform: translateX(5px);
 }
